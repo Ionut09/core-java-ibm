@@ -1,18 +1,24 @@
-package com.ibm;
+package com.ibm._1_intro;
 
 import java.util.Scanner;
 
 public class FlowStatements {
 	
 	public static void main(String[] args) {
+		if(args.length > 0){
+//			String arg = args[0];
+			String arg = args[0];
+			System.out.println("arg = " + arg);
+			System.out.println("arg 2 = " + args[1]);
+		}
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the month: ");
-		//		String month = scanner.next();
-		//
-		//		int numberOfDays = getNumberOfDaysUsingSwitch(month);
-		//
-		//		System.out.println("Month: " + month.toUpperCase() + " has " + numberOfDays + " days");
+		String month = scanner.next();
+		
+		int numberOfDays = getNumberOfDaysUsingSwitch(month);
+		
+		System.out.println("Month: " + month.toUpperCase() + " has " + numberOfDays + " days");
 		
 		int[] numbers = new int[]{
 			11, 26, 19, 7, 22, 35, 99, 159
@@ -42,6 +48,7 @@ public class FlowStatements {
 				System.out.print(number + ", ");
 			}
 		}
+		return;
 	}
 	
 	/*
@@ -82,7 +89,7 @@ public class FlowStatements {
 		return true;
 	}
 	
-	private static int getNumberOfDaysUsingSwitch(String month) {
+	public static int getNumberOfDaysUsingSwitch(String month) {
 		month = month.toUpperCase();
 		switch (month) {
 			case "JAN":

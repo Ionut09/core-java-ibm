@@ -1,4 +1,4 @@
-package com.ibm;
+package com.ibm._1_intro;
 
 import java.util.*;
 //import java.awt.List;
@@ -10,7 +10,7 @@ public class UnicodeExamples {
 		//int
 		System.out.println(a + 0);
 		
-		com.ibm.UnicodeExamples ref; //-> fully qualified name of the class
+		UnicodeExamples ref; //-> fully qualified name of the class
 		
 		//print all chraacters from latin alphabet using a single System.out.println
 		for (int i = 0; i <= 25; i++) {

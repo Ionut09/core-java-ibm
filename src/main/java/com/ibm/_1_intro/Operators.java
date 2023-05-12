@@ -1,4 +1,4 @@
-package com.ibm;
+package com.ibm._1_intro;
 
 public class Operators {
 	
