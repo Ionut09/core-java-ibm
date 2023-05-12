@@ -12,16 +12,20 @@ public class BankingService2 {
 		defaultAccount.setBalance(new BigDecimal(-10));
 		String iban = defaultAccount.getIban();
 		System.out.println(iban);
-		System.out.println(defaultAccount.getUser());
+//		System.out.println(defaultAccount.getUser());
 		System.out.println(defaultAccount.getBalance());
 		System.out.println(defaultAccount.getCurrency());
 		
-//		int intValue = zero.intValue();
-//		System.out.println("intValue = " + intValue);
-//		double doubleValue = zero.doubleValue();
-//		System.out.println("doubleValue = " + doubleValue);
-//		if (doubleValue < 0.0) {
-//			System.out.println();
-//		}
+		//		int intValue = zero.intValue();
+		//		System.out.println("intValue = " + intValue);
+		//		double doubleValue = zero.doubleValue();
+		//		System.out.println("doubleValue = " + doubleValue);
+		//		if (doubleValue < 0.0) {
+		//			System.out.println();
+		//		}
+		defaultAccount.setBalance(new BigDecimal(1000));
+		defaultAccount.withdraw(new BigDecimal(100));
+		System.out.println("New balance: " + defaultAccount.getBalance());
+		
 	}
 }
